@@ -8,7 +8,7 @@ const Item = React.memo(({item}) => {
 
 const App = () => {
   const [count, setCount] = useState(0);
-
+  console.log("test");
   const data = useMemo(() => {
     return new Array(1000).fill(0).map((_, i) => ({
       id: i.toString(),
